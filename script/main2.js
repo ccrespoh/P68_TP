@@ -20,6 +20,7 @@
  }*/
 
 
+/*
 'use strict';
 $(document).ready(function () {
     $(".fermer").click(function () {
@@ -29,4 +30,4 @@ $(document).ready(function () {
 
 function afficher(clique){
     document.getElementById(clique).style.display='block';
-}
+}*/

@@ -7,42 +7,41 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css" media="screen" />
 </head>
 <body>
-   
    <section id="home">
    		<article><h1>Êtes-vous prêt à jouer?</h1></article>
    </section>
    <section id="about">
-   		<a href="#link1" onclick="afficher('link1')" class="fenetre">
+   		<a href="#link1"  class="fenetre">
            <article>
                <img src="images/jeux.png" alt="jeux"/>
                <h3>Information General</h3>
            </article>
        </a>
-       <a href="#link2" onclick="afficher('link2')" class="fenetre">
+       <a href="#link2"  class="fenetre">
            <article>
                <img src="images/tableu.png" alt="tableu"/>
                <h3>Elements</h3>
            </article>
        </a>
-       <a href="#link3" onclick="afficher('link3')" class="fenetre">
+       <a href="#link3" class="fenetre">
            <article>
                <img src="images/preparation.jpg" alt="preparation"/>
                <h3>Preparation</h3>
            </article>
        </a>
-       <a href="#link4" onclick="afficher('link4')" class="fenetre">
+       <a href="#link4"  class="fenetre">
            <article>
                <img src="images/3_6players.jpg" alt="3-6players"/>
                <h3>3-6 jouers</h3>
            </article>
        </a>
-       <a href="#link5" onclick="afficher('link5')" class="fenetre">
+       <a href="#link5" class="fenetre">
            <article>
                <img src="images/2players.jpg" alt="2players"/>
                <h3>2 jouer</h3>
            </article>
        </a>		
-       <a href="#link6" onclick="afficher('link6')" class="fenetre">
+       <a href="#link6"  class="fenetre">
            <article>
                <img src="images/contact.jpg" alt="2players"/>
                <h3>Contact us</h3>
@@ -50,7 +49,6 @@
        </a>		
       <div id="container">
 			<div class="content" id="link1">
-                <a class="fermer" href="javascript:">fermer</a>
 				<img id="info" src="images/jeux.png" alt="jeux"/>
 				<table>
 					<caption>Risk</caption>
@@ -109,10 +107,11 @@
 				 			<li>Générateur de hasard: OUI</li>
 				 			<li>Info. compl et parfaite: NON</li>
 				 		</ul>
-				 </details> 
-			</div>
+				 </details>
+                <a class="fermer" href="#span1">fermer</a>
+
+            </div>
 			<div class="content" id="link2">
-                <a class="fermer" href="javascript:">fermer</a>
                 <nav>
 					<ul>
 						<li><a href="#tableu">1 tableu</a></li>
@@ -161,10 +160,11 @@
 				<p>Les régiments sont représentés ainsi pour ne pas encombrer inutilement le planisphère. 					Quand un joueur possède beaucoup de régiments sur un même territoire, il est recommandé que 				les unités d’infanterie soient remplacées par le même nombre approprié d’unités de cavalerie 				ou d’artillerie:</p>
 				<p>
 						5 unités d’infanterie = 1 unité de cavalerie
-						2 unités de cavalerie = 1 unité de d’artillerie</p>				
-		</div>
+						2 unités de cavalerie = 1 unité de d’artillerie</p>
+                <a class="fermer" href="#span1">fermer</a>
+
+            </div>
 			<div class="content" id="link3">
-                <a class="fermer" href="javascript:">fermer</a>
 
                 Organisation
 
@@ -186,12 +186,12 @@ Contrairement à la plupart des jeux, la stratégie des risques nécessite une p
     Retirez les 12 cartes dans la mission de pont et de le replacer dans la boîte. Mélangez les cartes restantes et de les placer face cachée près du plateau.
 
     Le joueur qui a placé la première armée est aussi le premier à jouer.
+                <a class="fermer" href="#span1">fermer</a>
 
 
 			</div>
 			
 			<div class="content" id="link4">
-                <a class="fermer" href="javascript:">fermer</a>
 
                 2 - Préparation du jeu
 				
@@ -429,10 +429,10 @@ Puis c’est au joueur suivant de jouer.
 4 - Le vainqueur
 
 Le vainqueur est le premier joueur qui parvient à remplir sa mission. Cependant, vous ne pouvez revendiquer votre victoire que lors de votre tour de jeu. Si lors du tour de jeu d’un autre joueur, il arrive qu’un autre joueur remplisse votre mission, vous devez attendre votre tour de jeu avant de revendiquer votre victoire.
+                <a class="fermer" href="#span1">fermer</a>
 
 			</div>
 			<div class="content" id="link5">
-                <a class="fermer" href="javascript:">fermer</a>
 
                 <h3>Règles pour 2 joueurs</h3>
 				<nav>
@@ -476,13 +476,17 @@ Le vainqueur est le premier joueur qui parvient à remplir sa mission. Cependant
 						Puis c’est au second joueur de jouer. L’armée neutre n’a pas de tour de jeu car elle 						n’attaque jamais (ne reçoit donc pas de cartes “Risk”) et ne peut se déplacer.
 					</article>
 				</section>
-			</div>
+                <a class="fermer" href="#span1">fermer</a>
+
+            </div>
 			<div class="content" id="link6">kajsfdlñjklkjadsflñjkads6
-            	<a class="fermer" href="javascript:">fermer</a>
+            	<a class="fermer" href="#span1">fermer</a>
             </div>
         </div>
 	</section>
-<script src="script/jquery-1.11.1.min.js"></script>
+   <span id="span1"></span>
+
+   <script src="script/jquery-1.11.1.min.js"></script>
 <script src="script/main.js"></script>
 <script src="script/main2.js"></script>
 

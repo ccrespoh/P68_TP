@@ -154,9 +154,9 @@ summary{
 	display: block;
 }
 
-/*#link1:target, #link2:target, #link3:target,#link4:target,#link5:target,#link6:target{
+.content:target{
     display: block;
-}*/
+}
 .fermer{
     color: red;
     border: 1px solid green;
