@@ -11,44 +11,43 @@
    		<article><h1>Êtes-vous prêt à jouer?</h1></article>
    </section>
    <section id="about">
-   		<article class="fenetre">
-   			<a href="#link1" onclick="afficher('link1')">
-
-                <img src="images/jeux.png" alt="jeux"/>
-   				<h3>Information General</h3>
-   			</a>
-   		</article>
-		<article class="fenetre">
-			<a href="#link2" onclick="afficher('link2')">
-				<img src="images/tableu.png" alt="tableu"/>
-				<h3>Elements</h3>
-			</a>
-		</article>
-		<article class="fenetre">
-			<a href="#link3" onclick="afficher('link3')">
-				<img src="images/preparation.jpg" alt="preparation"/>
-				<h3>Preparation</h3>
-			</a>
-		</article>
-		<article class="fenetre">
-			<a href="#link4" onclick="afficher('link4')">
-				<img src="images/3_6players.jpg" alt="3-6players"/>
-				<h3>3-6 jouers</h3>
-			</a>	
-			</article>
-		<article class="fenetre">
-			<a href="#link5" onclick="afficher('link5')">
-				<img src="images/2players.jpg" alt="2players"/>
-				<h3>2 jouer</h3>
-			</a>
-		</article>
-		<article class="fenetre" >
-			<a href="#link6" onclick="afficher('link6')">
-				<img src="images/contact.jpg" alt="2players"/>
-				<h3>Contact Us</h3>
-			</a>
-		</article>
-		<div id="container">
+   		<a href="#link1" onclick="afficher('link1')" class="fenetre">
+           <article>
+               <img src="images/jeux.png" alt="jeux"/>
+               <h3>Information General</h3>
+           </article>
+       </a>
+       <a href="#link2" onclick="afficher('link2')" class="fenetre">
+           <article>
+               <img src="images/tableu.png" alt="tableu"/>
+               <h3>Elements</h3>
+           </article>
+       </a>
+       <a href="#link3" onclick="afficher('link3')" class="fenetre">
+           <article>
+               <img src="images/preparation.jpg" alt="preparation"/>
+               <h3>Preparation</h3>
+           </article>
+       </a>
+       <a href="#link4" onclick="afficher('link4')" class="fenetre">
+           <article>
+               <img src="images/3_6players.jpg" alt="3-6players"/>
+               <h3>3-6 jouers</h3>
+           </article>
+       </a>
+       <a href="#link5" onclick="afficher('link5')" class="fenetre">
+           <article>
+               <img src="images/2players.jpg" alt="2players"/>
+               <h3>2 jouer</h3>
+           </article>
+       </a>		
+       <a href="#link5" onclick="afficher('link6')" class="fenetre">
+           <article>
+               <img src="images/contact.jpg" alt="2players"/>
+               <h3>Contact us</h3>
+           </article>
+       </a>		
+      <div id="container">
 			<div class="content" id="link1">
                 <a class="fermer" href="javascript:">fermer</a>
 				<img id="info" src="images/jeux.png" alt="jeux"/>
@@ -113,65 +112,55 @@
 			</div>
 			<div class="content" id="link2">
                 <a class="fermer" href="javascript:">fermer</a>
-
+                <nav>
+					<ul>
+						<li><a href="#tableu">1 tableu</a></li>
+						<li><a href="#des">5 dés</a></li>
+						<li><a href="cartes">56 cartes</a> 
+						<li><a href="pions">6 groupes d'armées</a></li>
+					</ul>
+				</nav>
                 <img src="images/tableu.png" alt="tableu"/>
-				<ul>
-					<li><a href="#tableu">1 tableu</a></li>
-					<li><a href="#des">5 dés</a> ( 3 rouges , 2 blanc)</li>
-					<li>1 paquet de <a href="cartes">56 cartes</a> (42 cartes territoires , 2 jokers et 12 cartes missions secrètes )</li>
-					<li><a href="pions">6 groupes d'armées</a> de différentes couleurs ( rouge, noir , vert,jaune , bleu et gris )</li>
-				</ul>
-				<p id="tableu">La carte. Elle représente un planisphère sur lequel figurent 6 continents. Chaque continent est divisé en un certain nombre de « territoires », comme l’indique le tableau ci-dessous :</p>
+                				<p id="tableu">Le tableu. Il représente un planisphère sur lequel figurent 6 continents. Chaque continent est divisé en un certain nombre de « territoires », comme l’indique le tableau ci-dessous :</p>
 					<table>
-						<thead>
-							<tr>
-								<td>Continent</td>
-								<td>Territories</td>
-							</tr>
-						</thead>
 						<tbody>
-							<tr>
+							<tr><th>Continent</th>
 								<td>Afrique</td>
-								<td>6</td>
-							</tr>
-							<tr>
 								<td>Asie</td>
-								<td>12</td>
-							</tr>
-							<tr>
 								<td>Oceanie</td>
-								<td>4</td>
-							</tr>
-							<tr>
 								<td>Europe</td>
-								<td>6</td>
-							</tr>
-							<tr>
 								<td>America du Nord</td>
-								<td>9</td>
+								<td>America du Sud</td>
 							</tr>
 							<tr>
-								<td>America du Sud</td>
+								<th>Territories</th>
+								<td>6</td>
+								<td>12</td>
+								<td>4</td>
+								<td>6</td>
+								<td>9</td>
 								<td>4</td>
 							</tr>
 						</tbody>
 					</table>
-				<p id="des">Les dés.Ils sont utilisés au cours des combats. L’attaquant peut utiliser 1,2 ou 3 dés et le défenseur 1 ou 2 dés. (Voir Phase 2 : les combats, comment attaquer)</p>
-				<p id="cartes">42 marqués d' un territoire , et un dessin d'un soldat d'infanterie , de cavalerie ou d'artillerie , 2 jokers marqué avec les 3 dessins et sans 	territoire , 12 cartes pour une utilisation dans des risques : Mission secrète . Chaque carte décrit un objectif stratégique à atteindre. Bien que toutes les 						missions soient différentes, leur niveau de difficultés est équivalent.</p>
-				<p id="pions">Il ya 6 groupes d'armées entières ( de vert, bleu , rouge, jaune , noir et gris ). Pour représenter son armée, chaque joueur dispose de 3 types de pions : <strong>Infanterie</strong><strong>Cavalerie</strong><strong>Artillerie</strong></p>
-				<p>Chaque types de pions représentent le nombre de régiment suivants :</p>
+				<p id="des">Les dés: 5 dés (3 rouges , 2 blanc).Ils sont utilisés au cours des combats. L’attaquant peut utiliser 1,2 ou 3 dés et le défenseur 1 ou 2 dés.</p>
+				<p id="cartes">42 marqués d' un territoire , et un dessin d'un soldat d'infanterie , de cavalerie ou d'artillerie , 2 jokers marqué avec les 3 dessins et sans 	territoire , 12 cartes pour une utilisation dans des risques : Mission secrète . Chaque carte décrit un objectif stratégique à atteindre. Bien que toutes les 						missions soient différentes, leur niveau de difficultés est équivalent.
+				</p>
+				<ul>
+					<li>42 cartes territoires</li>
+					<li>2 jokers</li>
+					<li>12 cartes missions secrètes</li>
+				</ul>
+				<p id="pions">Il ya 6 groupes d'armées entières ( de vert, bleu , rouge, jaune , noir et gris ). Pour représenter son armée, chaque joueur dispose de 3 types de pions :</p>
 					<ul>
-						<li>Infanterie =1 regiment</li>
-						<li>Cavalerie = 5 regiments</li>
-						<li>Artillerie = 10 regiments</li>
+						<li><strong>Infanterie</strong> =1 regiment</li>
+						<li><strong>Cavalerie</strong> = 5 regiments</li>
+						<li><strong>Artillerie</strong> = 10 regiments</li>
 					</ul>
-				<p>Les régiments sont représentés ainsi pour ne pas encombrer inutilement le planisphère. 					Quand un joueur possède beaucoup de régiments sur un même territoire, il est recommandé que 				les unités d’infanterie soient remplacées par le même nombre approprié d’unités de cavalerie 				ou d’artillerie. Dans notre jeu, le nombre de régiments sera inscrit sur le planisphère.</p>
-				<p>Exemple :
-
+				<p>Les régiments sont représentés ainsi pour ne pas encombrer inutilement le planisphère. 					Quand un joueur possède beaucoup de régiments sur un même territoire, il est recommandé que 				les unités d’infanterie soient remplacées par le même nombre approprié d’unités de cavalerie 				ou d’artillerie:</p>
+				<p>
 						5 unités d’infanterie = 1 unité de cavalerie
-						2 unités de cavalerie = 1 unité de d’artillerie</p>
-
-				<p>Ces unités peuvent, bien sûr, à nouveau être redivisées en unités plus petites 							quand le joueur le désire et à n’importe quel moment.</p>				
+						2 unités de cavalerie = 1 unité de d’artillerie</p>				
 		</div>
 			<div class="content" id="link3">
                 <a class="fermer" href="javascript:">fermer</a>
@@ -488,7 +477,7 @@ Le vainqueur est le premier joueur qui parvient à remplir sa mission. Cependant
 				</section>
 			</div>
 			<div class="content" id="link6">kajsfdlñjklkjadsflñjkads6
-            <a class="fermer" href="javascript:">fermer</a>
+            	<a class="fermer" href="javascript:">fermer</a>
             </div>
         </div>
 	</section>
