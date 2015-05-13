@@ -26,22 +26,20 @@ margin: 0 auto;
 width: 100%;
 max-width: 1920px;
 position: absolute;
+padding:0 35px;
 -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
 box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
+
 .fenetre{
     color:white;
-    margin: 5% 6%;
-    height:30%;
-    width:20%;
+    padding:5px 10px;
+    margin: 25px 60px;
+    height:260px;
+    width:300px;
     position:relative;
     display: inline-block;
-/*<<<<<<< HEAD
-    background:rgba(87, 123, 113,0.85);
-=======*/
-    /*background:rgba(87, 123, 113,0.85);*/
     background: rgba( 139,0,0,0.75);
-/*>>>>>>> 0a72bf0bf4932766279489b74574856b76f74b69*/
     -moz-border-radius:10px;
     -webkit-border-radius:10px;
     -o-border-radius:10px;
@@ -52,18 +50,11 @@ box-shadow: 0 0 50px rgba(0,0,0,0.8);
     text-decoration: none;
 }
 .fenetre>article>img{
-    padding-top:2%;
-    padding-right:5%;
-    padding-left:5%;
-/*<<<<<<< HEAD
-    width:60%;
-    height:50%;
-=======*/
-    width:180px;
-    height: 130px;
-    /*width:60%;
-    height:50%;*/
-/*>>>>>>> 0a72bf0bf4932766279489b74574856b76f74b69*/
+    padding-top:5px;
+    padding-right:5px;
+    padding-left:5px;
+    width:270px;
+    height:200px;
 }
 .fenetre:hover {
     background:rgba(39,124,145, 1.0);
@@ -95,6 +86,30 @@ box-shadow: 0 0 50px rgba(0,0,0,0.8);
     height: 110px;
     }
 }
+footer{
+    position:absolute;
+    top:705px;
+    background:rgba(39,124,145,1);
+    color:white;
+    height:40px;
+    width:85%;
+    margin:0 50px;
+    padding-top: 5px;
+
+}
+#copyright{
+    margin-right:15px;
+    font-size:x-small;
+    display: inline-block;
+
+
+}
+#foot{
+    margin-left:15px;
+    font-size: x-small;
+    text-align: right;
+    display: inline-block;
+}
 #container{
 /*display: none;*/
 margin: 2% 5%;
@@ -125,13 +140,13 @@ margin:2% 5%;
 -webkit-border-radius:10px;
 -o-border-radius:10px;
 border-radius:10px;
-height: auto;
+height: 650px;
 padding: 1% 5%;
+
+display:none;
 /*display: none;*/
 }
-.content{
-display:none;
-}
+
 #link2 nav{
 	border:3px solid rgba(39,124,145,0.8); 
 	-moz-border-radius:10px;
