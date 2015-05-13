@@ -6,9 +6,15 @@ input, label{
  fieldset {
     margin: 50px auto;
     border:1px solid darkgray;
-    width: 350px;
+    width: 360px;
      padding-left: 20px ;
 }
+ #fieldset3{
+     width: 330px;
+     margin: 15px 0;
+     padding-left: 5px;
+ }
+
 
 #form1 .left, #user_name, #password, #form1 a, #div_memory, #login {
     float: left;
@@ -28,15 +34,18 @@ input, label{
     float: left;
 }
 
-#form2 .left, #div_agree{
+#form2 .left, #div_agree,#submit{
     clear: left;
 }
 
-#form2 .left, #div_agree{
+#form2 .left:not(#label_expiration):not(#label_card):not(#label_code){
     width: 170px;
 }
+#label_expiration, #label_card,#label_code{
+    width: 147px;
+}
 
-#div_form a{
+#form1 a{
     text-decoration: none;
 }
 legend{
@@ -55,20 +64,30 @@ font-weight: bold;
     margin-right: 5px;
 }
 
+#submit,#reset{
+    margin: 10px 45px 0 45px;
+}
 
 @media (max-width: 400px) {
 
-    #form1 .left,#form2 .left, #div_agree, #div_memory{
-        width: 130px;
-    }
+    /*#form1 .left,#form2 .left, #div_agree, #div_memory{
+        width: 160px;
+    }*/
     fieldset{
-        width: 190px;
+        width: 210px;
         background-color: #f3f3f3;
+    }
 
+    #fieldset3{
+        width: 150px;
     }
     input{
         margin-top: 0;
         margin-bottom: 10px;
+    }
+    #submit,#reset{
+        margin-left: 8px;
+        margin-right: 8px;
     }
 }
 
