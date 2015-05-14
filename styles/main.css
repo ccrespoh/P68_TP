@@ -3,8 +3,11 @@
         src: url(../font/Blokletters-Balpen.ttf);
 
     }
+    body{
+	    font-family: "Blokletters";
+    }
 #home {
-background: url(../images/bg.jpg) 50% 0 no-repeat fixed; min-height: 1000px;
+background: url(../images/bg.jpg) 50% 0 repeat fixed; min-height: 1000px;
 height: 1000px;
 margin: 0 auto;
 width: 100%;
@@ -30,12 +33,10 @@ h3{
 background: orange 50% 0 repeat fixed; min-height: 750px;
 /*height: 750px;*/
 height: auto;
-margin: 0 auto;
-width: 87%;
+width: 100%;
 max-width: 1920px;
-position: absolute;
-padding:0 35px;
-left:4%;
+position: relative;
+margin:0 auto;
 -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
 box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
@@ -43,12 +44,13 @@ box-shadow: 0 0 50px rgba(0,0,0,0.8);
 .fenetre{
     color:white;
     padding:5px 5px;
-    margin: 25px 47px;
-    height:260px;
+    margin: 3% 5%;
+    height:250px;
     width:300px;
     position:relative;
     display: inline-block;
-    background: rgba( 139,0,0,0.75);
+
+    background: rgba(254, 225, 0, 0.8);
     -moz-border-radius:10px;
     -webkit-border-radius:10px;
     -o-border-radius:10px;
@@ -64,8 +66,8 @@ box-shadow: 0 0 50px rgba(0,0,0,0.8);
     padding-top:5px;
     padding-right:5px;
     padding-left:5px;
-    width:270px;
-    height:200px;
+    width:250px;
+    height:180px;
 }
 .fenetre:hover {
     background:rgba(39,124,145, 1.0);
@@ -99,24 +101,27 @@ box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 footer{
     margin-top: 5%;
-    padding-bottom:40px;
-    margin-left: 50px;
+    padding-bottom:50px;
+    margin-left: 70px;
     margin-right: 50px;
     background:rgba(39,124,145,1);
     color:white;
-    width:91%;
+    width:87%;
 
 }
 #copyright{
     margin-left:15px;
     font-size:x-small;
     float:left;
+    margin-top:15px;
 
 }
 #foot{
     float:right;
     font-size: x-small;
     margin-right: 15px;
+    margin-top:6px;
+    text-align: right;
    
 }
 #container{
@@ -158,12 +163,14 @@ display:none;
 
 #link2 nav{
 	border:3px solid rgba(39,124,145,0.8); 
+	background-color: orange;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	-o-border-radius:10px;
 	border-radius:10px;
+	padding:1% 1%;
 }
-#link2 img{
+#img_tb{
 	width: 400px;
 	float:left;
 }
@@ -177,14 +184,33 @@ display:none;
 summary{
 	display: block;
 }
+#phases{
+	-webkit-column-count:3;
+	-moz-column-count:3;
+	column-count:3; 	 	
+}
+#link4 ul{
+	display: inline-block;
+}
+#link4 li{
+	list-style-type: none;
+	font-size: small;
+}
+cite{
+	border:3px solid rgba(39,124,145,0.8); 
+	background-color: orange;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-o-border-radius:10px;
+	border-radius:10px;
+	padding:1% 1%;
+	
+}
 
 .content:target{
     display: block;
 }
 .fermer{
-    color: red;
-    border: 1px solid green;
-    padding: 5px;
-    background-color: yellow;
+    float:right;
 }
 
