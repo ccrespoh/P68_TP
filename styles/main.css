@@ -1,6 +1,10 @@
+@font-face{
+        font-family: "Blokletters";
+        src: url(../font/Blokletters-Balpen.ttf);
 
+    }
 #home {
-background: url(../images/bg.jpg) 50% 0 repeat fixed; min-height: 1000px;
+background: url(../images/bg.jpg) 50% 0 no-repeat fixed; min-height: 1000px;
 height: 1000px;
 margin: 0 auto;
 width: 100%;
@@ -19,22 +23,27 @@ h1{
 	font-weight: 800;
 	font-size: xx-large;
 }
+h3{
+	font-size: x-large;
+}
 #about {
 background: orange 50% 0 repeat fixed; min-height: 750px;
-height: 750px;
+/*height: 750px;*/
+height: auto;
 margin: 0 auto;
-width: 100%;
+width: 87%;
 max-width: 1920px;
 position: absolute;
 padding:0 35px;
+left:4%;
 -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
 box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
 .fenetre{
     color:white;
-    padding:5px 10px;
-    margin: 25px 60px;
+    padding:5px 5px;
+    margin: 25px 47px;
     height:260px;
     width:300px;
     position:relative;
@@ -45,6 +54,8 @@ box-shadow: 0 0 50px rgba(0,0,0,0.8);
     -o-border-radius:10px;
     border-radius:10px;
     text-align: center;
+    -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+	box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 .fenetre:link{
     text-decoration: none;
@@ -87,28 +98,26 @@ box-shadow: 0 0 50px rgba(0,0,0,0.8);
     }
 }
 footer{
-    position:absolute;
-    top:705px;
+    margin-top: 5%;
+    padding-bottom:40px;
+    margin-left: 50px;
+    margin-right: 50px;
     background:rgba(39,124,145,1);
     color:white;
-    height:40px;
-    width:85%;
-    margin:0 50px;
-    padding-top: 5px;
+    width:91%;
 
 }
 #copyright{
-    margin-right:15px;
+    margin-left:15px;
     font-size:x-small;
-    display: inline-block;
-
+    float:left;
 
 }
 #foot{
-    margin-left:15px;
+    float:right;
     font-size: x-small;
-    text-align: right;
-    display: inline-block;
+    margin-right: 15px;
+   
 }
 #container{
 /*display: none;*/
@@ -116,7 +125,7 @@ margin: 2% 5%;
 /*height:87%;*/
 /*height: auto;*/
 height:auto;
-max-height:650px;
+max-height:620px;
 width:87%;
 background:rgba(39,124,145,0.8); 
 position:absolute;
@@ -140,7 +149,7 @@ margin:2% 5%;
 -webkit-border-radius:10px;
 -o-border-radius:10px;
 border-radius:10px;
-height: 650px;
+height: auto;
 padding: 1% 5%;
 
 display:none;
