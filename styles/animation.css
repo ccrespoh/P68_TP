@@ -1,0 +1,18 @@
+@keyframes apparaitre {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: auto;
+        height: auto;
+    }
+}
+
+.content:target {
+    animation-name: apparaitre; /*此处也可以添加多个动画函数，用逗号隔开*/
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+
+}
