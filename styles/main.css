@@ -124,20 +124,20 @@ footer{
     text-align: right;
    
 }
-#container{
+/*#container{
 margin: 2% 5%;
 
 height:auto;
 max-height:620px;
 width:87%;
-background:rgba(39,124,145,0.8); 
+background:rgba(39,124,145,0.8);
 position:absolute;
 top:3%;
 -moz-border-radius:10px;
 -webkit-border-radius:10px;
 -o-border-radius:10px;
 border-radius:10px;
-}
+}*/
 #info{
 	float:right;
 	height: 250px;
@@ -154,8 +154,11 @@ margin:2% 5%;
 border-radius:10px;
 height: auto;
 padding: 1% 5%;
-
-display:none;
+    border: 30px solid rgba(39,124,145,0.6);
+    position: absolute;
+    top:3%;         /* ???????????????????????????????????    */
+    background-clip: padding-box;
+    display:none;
     /*transform: scale(0.1,0.1);*/
     /*transition : transform 2s;*/
 }

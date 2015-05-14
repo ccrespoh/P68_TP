@@ -45,6 +45,9 @@ input, label{
     width: 147px;
 }
 
+#expire, #card{
+    width: 170px;
+}
 #form1 a{
     text-decoration: none;
 }
