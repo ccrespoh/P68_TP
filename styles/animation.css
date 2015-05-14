@@ -1,18 +1,65 @@
-@keyframes apparaitre {
+@-webkit-keyframes apparaitre {
     0% {
-        width: 0;
-        height: 0;
+        transform: scale(0.1,0.1);
     }
     100% {
-        width: auto;
-        height: auto;
+        transform: scale(1,1);
     }
 }
 
+@keyframes apparaitre {
+    0% {
+        transform: scale(0.1,0.1);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+/*@-webkit-keyframes disparaitre {
+    0% {
+        transform: scale(1,1);
+    }
+    100% {
+        transform: scale(0.1,0.1);
+        *//*display: none;*//*
+    }
+}*/
+
+
 .content:target {
+    -webkit-animation-name: apparaitre; /*此处也可以添加多个动画函数，用逗号隔开*/
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: none;
+
     animation-name: apparaitre; /*此处也可以添加多个动画函数，用逗号隔开*/
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: 1;
     animation-fill-mode: none;
-
 }
+
+/*#container:target {
+    -webkit-animation-name: apparaitre; *//*此处也可以添加多个动画函数，用逗号隔开*//*
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: none;
+
+    animation-name: apparaitre; *//*此处也可以添加多个动画函数，用逗号隔开*//*
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+}*/
+
+
+/*
+#span1:target {
+    -webkit-animation-name: disparaitre; */
+/*此处也可以添加多个动画函数，用逗号隔开*//*
+
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-fill-mode: none;
+
+
+}*/

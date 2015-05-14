@@ -125,10 +125,8 @@ footer{
    
 }
 #container{
-/*display: none;*/
 margin: 2% 5%;
-/*height:87%;*/
-/*height: auto;*/
+
 height:auto;
 max-height:620px;
 width:87%;
@@ -158,7 +156,14 @@ height: auto;
 padding: 1% 5%;
 
 display:none;
-/*display: none;*/
+    /*transform: scale(0.1,0.1);*/
+    /*transition : transform 2s;*/
+}
+
+.content:target{
+    display: block;
+    /*transform: scale(0.1,0.1);*/
+    /*transform: scale(1,1);*/
 }
 
 #link2 nav{
@@ -207,9 +212,6 @@ cite{
 	
 }
 
-.content:target{
-    display: block;
-}
 .fermer{
     float:right;
 }
