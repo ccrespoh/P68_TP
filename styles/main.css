@@ -96,15 +96,15 @@ box-shadow: 0 0 50px rgba(0,0,0,0.8);
     #about {
         height: auto;
     }
+    .content{
+	    width: auto;
+    }
 }
 @media screen and (min-width:730px) and (max-width:1100px)  {
     .fenetre{
         display:inline-block;
         height:25%;
         width:25%;
-        /*margin-left:10%;
-        padding:5px 5px;
-		margin: 3% 5%;*/
     }
     #about {
         height: auto;
@@ -114,6 +114,10 @@ box-shadow: 0 0 50px rgba(0,0,0,0.8);
     width:170px;
     height: 125px;
     }
+    .content{
+	    width: auto;
+    }
+
 }
 footer{
     margin-top: 5%;
@@ -140,6 +144,7 @@ footer{
     text-align: right;
    
 }
+
 /*#container{
 margin: 2% 5%;
 
@@ -170,9 +175,11 @@ margin:2% 5%;
 border-radius:10px;
 height: auto;
 padding: 1% 5%;
+max-width: 850px;
     border: 30px solid rgba(39,124,145,0.6);
     position: absolute;
-    top:3%;         /* ???????????????????????????????????    */
+    top:3%;      
+      /* ???????????????????????????????????    */
     background-clip: padding-box;
     display:none;
     /*transform: scale(0.1,0.1);*/
@@ -228,6 +235,7 @@ cite{
 	-o-border-radius:10px;
 	border-radius:10px;
 	padding:1% 1%;
+	font-size: smaller;
 	
 }
 
