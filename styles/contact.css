@@ -74,7 +74,7 @@ font-weight: bold;
     margin: 10px 45px 0 45px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 590px) {
 
     /*#form1 .left,#form2 .left, #div_agree, #div_memory{
         width: 160px;
