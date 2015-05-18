@@ -16,16 +16,6 @@
     }
 }
 
-/*@-webkit-keyframes disparaitre {
-    0% {
-        transform: scale(1,1);
-    }
-    100% {
-        transform: scale(0.1,0.1);
-        *//*display: none;*//*
-    }
-}*/
-
 
 .content:target {
     -webkit-animation-name: apparaitre; /*此处也可以添加多个动画函数，用逗号隔开*/
@@ -38,6 +28,16 @@
     animation-iteration-count: 1;
     animation-fill-mode: none;
 }
+
+/*@-webkit-keyframes disparaitre {
+    0% {
+        transform: scale(1,1);
+    }
+    100% {
+        transform: scale(0.1,0.1);
+        *//*display: none;*//*
+    }
+}*/
 
 /*#container:target {
     -webkit-animation-name: apparaitre; *//*此处也可以添加多个动画函数，用逗号隔开*//*
