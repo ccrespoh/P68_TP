@@ -157,6 +157,13 @@ footer{
    
 }
 
+#link5 section head{
+	color:rgba(39,124,145,1);
+	font-weight: bold;
+}
+#link5 li{
+	text-decoration: none;
+}
 /*#container{
 margin: 2% 5%;
 
