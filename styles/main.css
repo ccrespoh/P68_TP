@@ -79,6 +79,14 @@ box-shadow: 0 0 50px rgba(0,0,0,0.8);
 .fenetre:hover {
     background:rgba(39,124,145, 1.0);
 }
+
+#phases{
+    -webkit-column-count:3;
+    -moz-column-count:3;
+    -o-column-count:3;
+    column-count:3;
+}
+
 @media screen and (max-width:729px) {
     .fenetre{
         display:block;
@@ -157,7 +165,7 @@ footer{
    
 }
 
-#link5 section head{
+#link5 section h4{
 	color:rgba(39,124,145,1);
 	font-weight: bold;
 }
@@ -244,12 +252,7 @@ max-width: 850px;
 summary{
 	display: block;
 }
-#phases{
-	-webkit-column-count:3;
-	-moz-column-count:3;
-	-o-column-count:3;
-	column-count:3; 	 	
-}
+
 #link4 ul{
 	display: inline-block;
 }
