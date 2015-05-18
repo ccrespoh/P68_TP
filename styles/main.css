@@ -51,7 +51,7 @@ box-shadow: 0 0 50px rgba(0,0,0,0.8);
 .fenetre{
     color:white;
     padding:5px 5px;
-    margin: 3% 1%;
+    margin: 3% 7%;
     height:250px;
     width:300px;
     position:relative;
@@ -162,7 +162,7 @@ footer{
 	font-weight: bold;
 }
 #link5 li{
-	text-decoration: none;
+	list-style: none;
 }
 /*#container{
 margin: 2% 5%;
